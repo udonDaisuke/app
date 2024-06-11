@@ -3,11 +3,16 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import HelloWorld from './component/001_HelloWorld/HelloWorld';
+import Counter from './component/002_Counter/Counter';
+import TodoArea from './component/003_TodoList/TodoArea';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    {/* <HelloWorld/> */}
+    {/* <Counter/> */}
+    <TodoArea/>
   </React.StrictMode>
 );
 

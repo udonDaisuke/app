@@ -1,0 +1,111 @@
+.main-area{
+  /* width: 100%; */
+  height: 100%;
+  margin: 10%;
+  background: rgba(128, 128, 128, 0.557);
+  border-radius: 10px;
+  position: relative;
+}
+
+.header-title{
+  margin: 0;
+  padding: 10px;
+  background: green;
+  text-align: center;
+  color: white;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.todo-area{
+  display: flex;
+  flex-direction: column;
+}
+
+.add-btn{
+  position: absolute;
+  right: 5%;
+  bottom: 5%;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+.add-btn>button{
+  height: inherit;
+  width: inherit;
+  border-radius: 50%;
+  background:yellowgreen;
+}
+
+/* -------------------- */
+.item-area{
+  display: flex;
+  position: relative;
+  width: 80%;
+  margin-left: -10px;
+  margin-bottom: 10px;
+}
+.item-area>input, .item-area>p{
+  display: inline-flex;
+  height: inherit;
+  border-radius: 50%;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle;
+  text-justify: auto;
+  margin-right: 6px;
+margin: 0;
+padding: 0;  
+}
+.x-btn{
+  display: flex;
+  position: absolute;  
+  right: 5%;
+  align-items: center;
+  margin-left: 10px;
+  height: 25px;
+  width: 25px;
+  padding: 0;margin: 0;
+
+}
+.x-btn>button{
+  display: inline-flex;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  line-height: 20px;
+
+  text-align: center;
+  vertical-align: middle;
+  text-justify: auto;
+}
+
+/* --------------------------- */
+
+.overlay{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #000000a0;
+  position:fixed;
+  top:0;
+  left:0; 
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.box{
+  display: flex;
+  flex-direction: column;
+  background: #ffffffdb;
+  position:fixed;
+  top:auto;
+  left:auto; 
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 20%;
+
+}
