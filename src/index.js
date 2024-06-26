@@ -10,6 +10,7 @@ import TodoArea from './component/003_TodoList/TodoArea_m';
 import Timer from './component/004_Timer/Timer';
 import Effect from './component/xxx_useeffect/Effect';
 import Board from './component/sanmoku/App';
+import Game from './component/sanmoku/Game';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -18,7 +19,7 @@ root.render(
     {/* <Counter/> */}
     {/* <TodoArea/> */}
     {/* <Effect/> */}
-    <Board/>
+    <Game/>
   </React.StrictMode>
 );
 
